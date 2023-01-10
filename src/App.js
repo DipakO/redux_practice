@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ReduxCounter from "./components/ReduxCounter";
+// import Counter from "./components/Counter";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Counter /> */}
+      {/* <h1>Hello From App</h1> */}
+      <ReduxCounter />
     </div>
   );
-}
+};
 
 export default App;
+
+// import React, { useState } from "react";
+
+// const App = () => {
+//   const [show, setShow] = useState(false);
+//   const handleClick = () => {
+//     setShow((prev) => !prev);
+//   };
+
+//   const hanldeMouseDown = () => {
+//     setShow((prev) => !prev);
+//   };
+
+//   return (
+//     <div>
+//       <input onFocus={handleClick} onMouseEnter={hanldeMouseDown} type="text" />
+//       <div style={{ display: show ? "flex" : "none", backgroundColor: "red" }}>
+//         <small>Hii</small>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default App;

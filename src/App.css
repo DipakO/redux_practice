@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.FirstPage{
+  border: 2px solid black;
+}
+.FirstPage:hover{
+  border: none;
+  /* border: 2px solid black; */
+  z-index: 0;
+}
